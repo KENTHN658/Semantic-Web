@@ -1,0 +1,1224 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#"
+     xml:base="http://www.semanticweb.org/thana/ontologies/2567/2/herb5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasBenefit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasBenefit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasSideEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasSideEffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#nutrition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#nutrition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#use -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#use">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Aloe-Emodin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Aloe-Emodin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">มีฤทธิ์กระตุ้นยาระบาย</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aloe-Emodin</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กระสัง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กระสัง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นกระสัง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกระสัง"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">กระสัง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กอมขม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กอมขม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกอมขม"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">กอมขม</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กำยาน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กำยาน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยางกำยาน"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">กำยาน</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กินกุ้งน้อย -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กินกุ้งน้อย">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แหล่งอาหารสัตว์"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">กินกุ้งน้อย</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับน้ำนมของสตรี -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับน้ำนมของสตรี">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ขับน้ำนมของสตรี</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับเสมหะ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับเสมหะ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ขับเสมหะ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ข้าวเย็นเหนือ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ข้าวเย็นเหนือ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบข้าวเย็นเหนือ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ข้าวเย็นเหนือ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรค -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรค">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ฆ่าเชื้อโรค</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรคในอากาศ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรคในอากาศ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ฆ่าเชื้อโรคในอากาศ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าแมลง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าแมลง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ฆ่าแมลง</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#จักรนารายณ์ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#จักรนารายณ์">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบจักรนารายณ์"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">จักรนารายณ์</name>
+        <use rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใช้ภายใน ถ้าเป็นยาแห้งให้ใช้ประมาณ 5-10 ใบ นำมาต้มกับน้ำรับประทานหรือใช้ร่วมกับตัวยาอื่น ๆ ในตำรับยา หรือถ้าเป็นยาแห้งให้นำมาบดเป็นผง หรือนำไปดองกับเหล้าโรงใช้รับประทานเป็นยาก็ได้ หากเป็นใบสด ให้นำมาล้างให้สะอาด ซับน้ำให้แห้ง แล้วนำมาเคี้ยวกินสด ๆ หรือนำไปใช้ประกอบอาหารรับประทาน หรือจะนำมาผึ่งให้แห้งแล้วนำมาบดหรือตำคั้นเอาแต่น้ำไปนึ่งจนสุก ปล่อยให้เย็นเก็บใส่ขวด ใส่ตู้เย็นไว้จะเก็บได้นาน แต่ที่ได้ผลดีที่สุดก็คือให้กินใบสดประมาณ 3-5 ใบก่อนเข้านอนใช้ภายนอก ให้ใช้ใบสดนำมาตำแล้วพอกบริเวณที่เป็น โดยให้เลือกใบสดนำมาล้างให้สะอาด ในวงศ์จักรนารายณ์ ยังมีสายพันธุ์อีกหลายชนิด เช่น Gynura ovalis DC. และ Gynura Sarmentora DC. แต่ชาวบ้านได้นำมาใช้ทดแทนกัน</use>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ชิงช้าชาลี -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ชิงช้าชาลี">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบชิงช้าชาลี"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ชิงช้าชาลี</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกถาวัลย์เปรียง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกถาวัลย์เปรียง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ดอกถาวัลย์เปรียง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกพิลังกาสา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกพิลังกาสา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรค"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ดอกพิลังกาสา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกหนาดคำ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกหนาดคำ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิดน้ำมันหอมระเหย"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ดอกหนาดคำ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเต่าร้างแดง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเต่าร้างแดง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิตเป็นน้ำตาล"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ดอกเต่าร้างแดง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเทียนบ้าน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเทียนบ้าน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้ย้อมเล็บ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ดอกเทียนบ้าน</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นกระสัง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นกระสัง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ต้นกระสัง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นเต่าร้างแดง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นเต่าร้างแดง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ต้นเต่าร้างแดง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านมะเร็ง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านมะเร็ง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ต้านมะเร็ง</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านอนุมูลอิสระ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านอนุมูลอิสระ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">มีสารต้านอนุมูลอิสระสูง</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ต้านเชื้อจุลินทรีย์</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ทำให้ชุ่มคอ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ทำให้ชุ่มคอ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ทำให้ชุ่มคอ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ท้องเสีย -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ท้องเสีย">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#นำไปวัดหรือบูชาพระ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#นำไปวัดหรือบูชาพระ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">นำไปวัดหรือบูชาพระ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#น้ำเต้า -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#น้ำเต้า">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">น้ำเต้า</name>
+        <nutrition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พลังงาน 27 แคลอรีคาร์โบไฮเดรต 4.1 กรัมโปรตีน 5.1 กรัมไขมัน 0 กรัมใยอาหาร 1.5 กรัมน้ำ 90.1 %วิตามินเอ 15,400 หน่วยสากลวิตามินบี 1 0.05 มิลลิกรัมวิตามินบี 2 0.06 มิลลิกรัมวิตามินซี 95 มิลลิกรัมธาตุแคลเซียม 56 มิลลิกรัมธาตุเหล็ก 11.5 มิลลิกรัมธาตุฟอสฟอรัส 140 มิลลิกรัมพลังงาน 10 แคลอรีคาร์โบไฮเดรต 2.2 กรัมโปรตีน 0.3 กรัมไขมัน 0 กรัมใยอาหาร 1.7 กรัมน้ำ 96.8 %เถ้า 0.3 กรัมวิตามินเอ 391 หน่วยสากลวิตามินบี 1 0.02 มิลลิกรัมวิตามินบี 2 0.04 มิลลิกรัมวิตามินบี 3 0.1 มิลลิกรัมวิตามินซี 12 มิลลิกรัมธาตุแคลเซียม 14 มิลลิกรัมธาตุเหล็ก 0.1 มิลลิกรัมธาตุฟอสฟอรัส 1 มิลลิกรัม</nutrition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บวบเหลี่ยม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บวบเหลี่ยม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลบวบเหลี่ยม"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดบวบเหลี่ยม"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">บวบเหลี่ยม</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บำรุงร่างกาย -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บำรุงร่างกาย">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">บำรุงร่างกาย</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ประกอบอาหาร</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ปอกระเจา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ปอกระเจา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดปอกระเจา"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบปอกระเจา"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ปอกระเจา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ป้องกันผมร่วง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ป้องกันผมร่วง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ป้องกันผมร่วง</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลกอมขม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลกอมขม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ทำให้ชุ่มคอ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลกอมขม</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลถาวัลย์เปรียง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลถาวัลย์เปรียง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลถาวัลย์เปรียง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลน้ำเต้า -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลน้ำเต้า">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยับยั้งเบาหวาน"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลน้ำเต้า</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลบวบเหลี่ยม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลบวบเหลี่ยม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับน้ำนมของสตรี"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับเสมหะ"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บำรุงร่างกาย"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษารังแค"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดไข้"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ร้อนใน"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลบวบเหลี่ยม</name>
+        <nutrition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พลังงาน 18 กิโลแคลอรีโปรตีน 0.7 กรัมไขมัน 0.2 กรัมคาร์โบไฮเดรต 3.3 กรัมเส้นใยอาหาร 0.3 กรัมเถ้า 0.4 กรัมน้ำ 95.4 กรัมเบตาแคโรทีน 30 ไมโครกรัมวิตามินเอรวม 5 REวิตามินบี 1 0.02 มิลลิกรัมวิตามินบี 2 0.04 มิลลิกรัมวิตามินบี 3 0.4 มิลลิกรัมวิตามินซี 15 มิลลิกรัมธาตุแคลเซียม 5 มิลลิกรัมธาตุฟอสฟอรัส 24 มิลลิกรัมธาตุเหล็ก 0.7 มิลลิกรัม</nutrition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลพิลังกาสา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลพิลังกาสา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดไข้"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ท้องเสีย"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลพิลังกาสา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิดน้ำมันหอมระเหย -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิดน้ำมันหอมระเหย">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลิดน้ำมันหอมระเหย</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิตเป็นน้ำตาล -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิตเป็นน้ำตาล">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลิตเป็นน้ำตาล</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลเต่าร้างแดง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลเต่าร้างแดง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีพิษ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ผลเต่าร้างแดง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#พิลังกาสา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#พิลังกาสา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกพิลังกาสา"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลพิลังกาสา"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดพิลังกาสา"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบพิลังกาสา"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พิลังกาสา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีพิษ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีพิษ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">มีพิษ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีฤทธิ์ระบาย -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีฤทธิ์ระบาย">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">มีฤทธิ์ระบาย</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีเลือดออกในลำไส้ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีเลือดออกในลำไส้">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">มีเลือดออกในลำไส้</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มุงหลังคา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มุงหลังคา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">มุงหลังคา</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยับยั้งเบาหวาน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยับยั้งเบาหวาน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ยับยั้งเบาหวาน</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยางกำยาน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยางกำยาน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรคในอากาศ"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ไล่แมลง"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ยางกำยาน</name>
+        <use rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เผาเอาควัน</use>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาฝี -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาฝี">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">รักษาฝี</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษารังแค -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษารังแค">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">รักษารังแค</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาสิว -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาสิว">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">รักษาสิว</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">รับประทานเป็นผักสด</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รากเถาวัลย์เปรียง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รากเถาวัลย์เปรียง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าแมลง"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้เป็นยาเบื่อปลา"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">รากเถาวัลย์เปรียง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดการอักเสบ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดการอักเสบ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ลดการอักเสบ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดความดันโลหิต -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดความดันโลหิต">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ลดความดันโลหิต</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดไข้ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดไข้">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ลดไข้</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#สนหางสิงห์ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#สนหางสิงห์">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ป้องกันผมร่วง"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">สนหางสิงห์</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#สะพ้านก๊น -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#สะพ้านก๊น">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าแมลง"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">สะพ้านก๊น</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ส่วนประกอบหลักของเครื่องหอม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ส่วนประกอบหลักของเครื่องหอม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ส่วนปรกอบหลักของเครื่องหอม</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#หนาดคำ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#หนาดคำ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกหนาดคำ"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดหนาดคำ"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบหนาดคำ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">หนาดคำ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ห้ามเลือด -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ห้ามเลือด">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ห้ามเลือด</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#อาเจียน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#อาเจียน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">อาเจียน</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เครื่องจักสาน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เครื่องจักสาน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เครื่องจักสาน</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เต่าร้างแดง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เต่าร้างแดง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเต่าร้างแดง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นเต่าร้างแดง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลเต่าร้างแดง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเต่าร้างแดง"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เต่าร้างแดง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เถาวัลย์เปรียง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เถาวัลย์เปรียง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกถาวัลย์เปรียง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลถาวัลย์เปรียง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รากเถาวัลย์เปรียง"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเถาวัลย์เปรียง"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เถาวัลย์เปรียง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เทียนบ้าน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เทียนบ้าน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเทียนบ้าน"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดเทียนบ้าน"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเทียนบ้าน"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เทียนบ้าน</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เฟิร์นเงิน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เฟิร์นเงิน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เฟิร์นเงิน</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดบวบเหลี่ยม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดบวบเหลี่ยม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าแมลง"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีฤทธิ์ระบาย"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ท้องเสีย"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีเลือดออกในลำไส้"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#อาเจียน"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เมล็ดบวบเหลี่ยม</description>
+        <nutrition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ไขมันอยู่ประมาณ 37.5% มีโปรตีนประมาณ 33.4% และประกอบไปด้วยกรดอะมิโน และเมล็ดบวบที่มีรสขมจะมีสาร Cucurbitacin B 0.12%, น้ำมันประมาณ 18.4%, กรดไขมันไม่อิ่มตัวประมาณ 80.3%, กรดไขมันอิ่มตัวประมาณ 19.34% unsaponified matters 1.5% กรดไขมันได้แก่ Oleic acid, Palmitic acid, Stearic acid, Linoleic acid และมี Lignoceric acid</nutrition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดปอกระเจา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดปอกระเจา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีพิษ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เมล็ดปอกระเจา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดพิลังกาสา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดพิลังกาสา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ลมพิษ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เมล็ดพิลังกาสา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดหนาดคำ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดหนาดคำ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิดน้ำมันหอมระเหย"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เมล็ดหนาดคำ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดเทียนบ้าน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดเทียนบ้าน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับเสมหะ"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้แผลไฟไหม้น้ำร้อนลวก"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">เมล็ดเทียนบ้าน</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้คางทูม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้คางทูม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แก้คางทูม</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ท้องเสีย -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ท้องเสีย">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แก้ท้องเสีย</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ร้อนใน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ร้อนใน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แก้ร้อนใน</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ลมพิษ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ลมพิษ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แก้ลมพิษ</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้แผลไฟไหม้น้ำร้อนลวก -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้แผลไฟไหม้น้ำร้อนลวก">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แก้แผลไฟไหม้น้ำร้อนลวก</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ไอ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ไอ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แพงพวยน้ำ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แพงพวยน้ำ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบแพงพวยน้ำ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แพงพวยน้ำ</name>
+        <nutrition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พลังงาน 38 แคลอรี, น้ำ 87%, โปรตีน 3.3 กรัม, ไขมัน 4.8 กรัม, คาร์โบไฮเดรต 4.8 กรัม, ใยอาหาร 3.3 กรัม, เถ้า 1 กรัม, วิตามินเอ 9,875 หน่วยสากล, วิตามินบี2 0.01 มิลลิกรัม, วิตามินบี3 2.8 มิลลิกรัม, วิตามินซี 3 มิลลิกรัม, แคลเซียม 57 มิลลิกรัม, ฟอสฟอรัส 300 มิลลิกรัม และธาตุเหล็ก 1.3 มิลลิกรัม</nutrition>
+        <use rdf:datatype="http://www.w3.org/2001/XMLSchema#string">วิธีใช้ตาม ถ้าเป็นยาแห้งให้ใช้ครั้งละ 10-35 กรัม นำมาต้มกับน้ำกิน ถ้าเป็นยาสดให้ใช้ครั้งละ 30-70 กรัม นำมาตำคั้นเอาแต่น้ำกินหรือใช้ตำพอกแผลภายนอก การเก็บมาใช้ ให้เก็บในช่วงกำลังออกดอกและลำต้นงอกงามดีแล้ว แล้วนำมาล้างให้สะอาด ตากให้แห้งเก็บเอาไว้ใช้ หรือจะใช้แบบสด ๆ เลยก็ได้ลักษณะของยาแห้งที่ดี ควรมีลักษณะของลำต้นยาวและอวบอ้วน มีความกว้างประมาณ 3-5 มิลลิเมตร สีออกน้ำตาลแดง มีรอยย่นทั้งตามยาวและตามขวาง มีเนื้อนิ่ม ตามใต้ข้อมีรากแห้งเป็นฝอยสีดำคล้ายเส้นผม กลีบมันร่วงง่าย และมักร่วงหายหมดไป</use>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แหล่งอาหารสัตว์ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แหล่งอาหารสัตว์">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">แหล่งอาหารสัตว์</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#โกฐน้ำเต้า -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#โกฐน้ำเต้า">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบโกฐน้ำเต้า"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">พลังงาน 88 กิโลแคลอรีคาร์โบไฮเดรต 4.54 กรัมน้ำตาล 1.1 กรัมเส้นใยอาหาร 1.8 กรัมไขมัน 0.3 กรัมโปรตีน 0.8 กรัมวิตามินบี 1 0.02 มิลลิกรัม 2%วิตามินบี 2 0.03 มิลลิกรัม 3%วิตามินบี 3 0.3 มิลลิกรัม 2%วิตามินบี 5 0.085 มิลลิกรัม 2%วิตามินบี 6 0.024 มิลลิกรัม 2%วิตามินบี 9 7 ไมโครกรัม 2%โคลีน 6.1 มิลลิกรัม 1%วิตามินซี 8 มิลลิกรัม 10%วิตามินอี 0.27 มิลลิกรัม 2%วิตามินเค 29.3 ไมโครกรัม 28%ธาตุแคลเซียม 86 มิลลิกรัม 9%ธาตุเหล็ก 0.22 มิลลิกรัม 2%ธาตุแมกนีเซียม 12 มิลลิกรัม 3%ธาตุแมงกานีส 0.196 มิลลิกรัม 9%ธาตุฟอสฟอรัส 14 มิลลิกรัม 2ธาตุโพแทสเซียม 288 มิลลิกรัม 6%ธาตุโซเดียม 4 มิลลิกรัม 0%ธาตุสังกะสี 0.1 มิลลิกรัม 1%</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">โกฐน้ำเต้า</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้ย้อมเล็บ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้ย้อมเล็บ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ช้ย้อมเล็บทำให้เล็บเป็นสีส้ม</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้เป็นยาเบื่อปลา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้เป็นยาเบื่อปลา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใช้เป็นยาเบื่อปลา</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกระสัง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกระสัง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านมะเร็ง"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านอนุมูลอิสระ"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ป้องกันผมร่วง"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาสิว"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบกระสัง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกอมขม -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกอมขม">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดไข้"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบกอมขม</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบข้าวเย็นเหนือ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบข้าวเย็นเหนือ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ห้ามเลือด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบข้าวเย็นเหนือ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบจักรนารายณ์ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบจักรนารายณ์">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบจักรนารายณ์</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบชิงช้าชาลี -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบชิงช้าชาลี">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยับยั้งเบาหวาน"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดการอักเสบ"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดความดันโลหิต"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แหล่งอาหารสัตว์"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบชิงช้าชาลี</name>
+        <nutrition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">โปรตีนสูง มีแคลเซียมและฟอสฟอรัสในปริมาณปานกลาง</nutrition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบน้ำเต้า -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบน้ำเต้า">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบน้ำเต้า</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบปอกระเจา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบปอกระเจา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบปอกระเจา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบพิลังกาสา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบพิลังกาสา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีฤทธิ์ระบาย"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ไอ"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบพิลังกาสา</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบหนาดคำ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบหนาดคำ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบหนาดคำ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเต่าร้างแดง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเต่าร้างแดง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มุงหลังคา"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เครื่องจักสาน"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบเต่าร้างแดง</description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเถาวัลย์เปรียง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเถาวัลย์เปรียง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบถาวัลย์เปรียง</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเทียนบ้าน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเทียนบ้าน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาฝี"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้แผลไฟไหม้น้ำร้อนลวก"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบเทียนบ้าน</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบแพงพวยน้ำ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบแพงพวยน้ำ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบแพงพวยน้ำ</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบโกฐน้ำเต้า -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบโกฐน้ำเต้า">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีฤทธิ์ระบาย"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ห้ามเลือด"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ใบโกฐน้ำเต้า</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ไล่แมลง -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ไล่แมลง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ไล่แมลง</description>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

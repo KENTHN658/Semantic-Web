@@ -1,0 +1,855 @@
+@prefix : <http://www.semanticweb.org/thana/ontologies/2567/2/herb5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/thana/ontologies/2567/2/herb5> .
+
+<http://www.semanticweb.org/thana/ontologies/2567/2/herb5> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:domain :Flower ,
+                 :Herb ,
+                 :Leaf ,
+                 :Resin ,
+                 :Root ,
+                 :Tree ;
+     rdfs:range :Chemical .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasBenefit
+:hasBenefit rdf:type owl:ObjectProperty ;
+            rdfs:domain :Flower ,
+                        :Fruit ,
+                        :Leaf ,
+                        :Resin ,
+                        :Root ,
+                        :Seed ,
+                        :Tree ;
+            rdfs:range :Benefit .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasComponent
+:hasComponent rdf:type owl:ObjectProperty ;
+              rdfs:domain :Herb ;
+              rdfs:range :Flower ,
+                         :Fruit ,
+                         :Leaf ,
+                         :Resin ,
+                         :Root ,
+                         :Seed ,
+                         :Tree .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#hasSideEffect
+:hasSideEffect rdf:type owl:ObjectProperty ;
+               rdfs:domain :Flower ,
+                           :Fruit ,
+                           :Leaf ,
+                           :Resin ,
+                           :Root ,
+                           :Seed ,
+                           :Tree ;
+               rdfs:range :SideEffect .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Benefit ,
+                         :Chemical ,
+                         :SideEffect ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Chemical ,
+                  :Flower ,
+                  :Fruit ,
+                  :Herb ,
+                  :Leaf ,
+                  :Resin ,
+                  :Root ,
+                  :Seed ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#nutrition
+:nutrition rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Herb ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#use
+:use rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Chemical ,
+                 :Flower ,
+                 :Fruit ,
+                 :Leaf ,
+                 :Resin ,
+                 :Root ,
+                 :Seed ;
+     rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Benefit
+:Benefit rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Chemical
+:Chemical rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Flower
+:Flower rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Fruit
+:Fruit rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Herb
+:Herb rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Leaf
+:Leaf rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Resin
+:Resin rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Root
+:Root rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Seed
+:Seed rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#SideEffect
+:SideEffect rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Tree
+:Tree rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#Aloe-Emodin
+:Aloe-Emodin rdf:type owl:NamedIndividual ,
+                      :Chemical ;
+             :description "มีฤทธิ์กระตุ้นยาระบาย"^^xsd:string ;
+             :name "Aloe-Emodin"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กระสัง
+:กระสัง rdf:type owl:NamedIndividual ,
+                 :Herb ;
+        :hasComponent :ต้นกระสัง ,
+                      :ใบกระสัง ;
+        :name "กระสัง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กอมขม
+:กอมขม rdf:type owl:NamedIndividual ,
+                :Herb ;
+       :hasComponent :ใบกอมขม ;
+       :name "กอมขม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กำยาน
+:กำยาน rdf:type owl:NamedIndividual ,
+                :Herb ;
+       :hasComponent :ยางกำยาน ;
+       :name "กำยาน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#กินกุ้งน้อย
+:กินกุ้งน้อย rdf:type owl:NamedIndividual ,
+                      :Herb ;
+             :hasBenefit :แหล่งอาหารสัตว์ ;
+             :name "กินกุ้งน้อย"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับน้ำนมของสตรี
+:ขับน้ำนมของสตรี rdf:type owl:NamedIndividual ,
+                          :Benefit ;
+                 :description "ขับน้ำนมของสตรี"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ขับเสมหะ
+:ขับเสมหะ rdf:type owl:NamedIndividual ,
+                   :Benefit ;
+          :description "ขับเสมหะ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ข้าวเย็นเหนือ
+:ข้าวเย็นเหนือ rdf:type owl:NamedIndividual ,
+                        :Herb ;
+               :hasComponent :ใบข้าวเย็นเหนือ ;
+               :name "ข้าวเย็นเหนือ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรค
+:ฆ่าเชื้อโรค rdf:type owl:NamedIndividual ,
+                      :Benefit ;
+             :description "ฆ่าเชื้อโรค"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าเชื้อโรคในอากาศ
+:ฆ่าเชื้อโรคในอากาศ rdf:type owl:NamedIndividual ,
+                             :Benefit ;
+                    :description "ฆ่าเชื้อโรคในอากาศ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ฆ่าแมลง
+:ฆ่าแมลง rdf:type owl:NamedIndividual ,
+                  :Benefit ;
+         :description "ฆ่าแมลง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#จักรนารายณ์
+:จักรนารายณ์ rdf:type owl:NamedIndividual ,
+                      :Herb ;
+             :hasComponent :ใบจักรนารายณ์ ;
+             :name "จักรนารายณ์"^^xsd:string ;
+             :use "ใช้ภายใน ถ้าเป็นยาแห้งให้ใช้ประมาณ 5-10 ใบ นำมาต้มกับน้ำรับประทานหรือใช้ร่วมกับตัวยาอื่น ๆ ในตำรับยา หรือถ้าเป็นยาแห้งให้นำมาบดเป็นผง หรือนำไปดองกับเหล้าโรงใช้รับประทานเป็นยาก็ได้ หากเป็นใบสด ให้นำมาล้างให้สะอาด ซับน้ำให้แห้ง แล้วนำมาเคี้ยวกินสด ๆ หรือนำไปใช้ประกอบอาหารรับประทาน หรือจะนำมาผึ่งให้แห้งแล้วนำมาบดหรือตำคั้นเอาแต่น้ำไปนึ่งจนสุก ปล่อยให้เย็นเก็บใส่ขวด ใส่ตู้เย็นไว้จะเก็บได้นาน แต่ที่ได้ผลดีที่สุดก็คือให้กินใบสดประมาณ 3-5 ใบก่อนเข้านอนใช้ภายนอก ให้ใช้ใบสดนำมาตำแล้วพอกบริเวณที่เป็น โดยให้เลือกใบสดนำมาล้างให้สะอาด ในวงศ์จักรนารายณ์ ยังมีสายพันธุ์อีกหลายชนิด เช่น Gynura ovalis DC. และ Gynura Sarmentora DC. แต่ชาวบ้านได้นำมาใช้ทดแทนกัน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ชิงช้าชาลี
+:ชิงช้าชาลี rdf:type owl:NamedIndividual ,
+                     :Herb ;
+            :hasComponent :ใบชิงช้าชาลี ;
+            :name "ชิงช้าชาลี"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกถาวัลย์เปรียง
+:ดอกถาวัลย์เปรียง rdf:type owl:NamedIndividual ,
+                           :Flower ;
+                  :hasBenefit :รับประทานเป็นผักสด ;
+                  :name "ดอกถาวัลย์เปรียง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกพิลังกาสา
+:ดอกพิลังกาสา rdf:type owl:NamedIndividual ,
+                       :Flower ;
+              :hasBenefit :ฆ่าเชื้อโรค ;
+              :name "ดอกพิลังกาสา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกหนาดคำ
+:ดอกหนาดคำ rdf:type owl:NamedIndividual ,
+                    :Flower ;
+           :hasBenefit :ต้านเชื้อจุลินทรีย์ ,
+                       :ผลิดน้ำมันหอมระเหย ;
+           :name "ดอกหนาดคำ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเต่าร้างแดง
+:ดอกเต่าร้างแดง rdf:type owl:NamedIndividual ,
+                         :Flower ;
+                :hasBenefit :ผลิตเป็นน้ำตาล ;
+                :name "ดอกเต่าร้างแดง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ดอกเทียนบ้าน
+:ดอกเทียนบ้าน rdf:type owl:NamedIndividual ,
+                       :Flower ;
+              :hasBenefit :ใช้ย้อมเล็บ ;
+              :name "ดอกเทียนบ้าน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นกระสัง
+:ต้นกระสัง rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           :hasBenefit :รับประทานเป็นผักสด ;
+           :name "ต้นกระสัง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้นเต่าร้างแดง
+:ต้นเต่าร้างแดง rdf:type owl:NamedIndividual ,
+                         :Tree ;
+                :hasBenefit :ประกอบอาหาร ;
+                :name "ต้นเต่าร้างแดง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านมะเร็ง
+:ต้านมะเร็ง rdf:type owl:NamedIndividual ,
+                     :Benefit ;
+            :description "ต้านมะเร็ง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านอนุมูลอิสระ
+:ต้านอนุมูลอิสระ rdf:type owl:NamedIndividual ,
+                          :Benefit ;
+                 :description "มีสารต้านอนุมูลอิสระสูง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ต้านเชื้อจุลินทรีย์
+:ต้านเชื้อจุลินทรีย์ rdf:type owl:NamedIndividual ,
+                              :Benefit ;
+                     :description "ต้านเชื้อจุลินทรีย์"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ทำให้ชุ่มคอ
+:ทำให้ชุ่มคอ rdf:type owl:NamedIndividual ,
+                      :Benefit ;
+             :description "ทำให้ชุ่มคอ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ท้องเสีย
+:ท้องเสีย rdf:type owl:NamedIndividual ,
+                   :SideEffect .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#นำไปวัดหรือบูชาพระ
+:นำไปวัดหรือบูชาพระ rdf:type owl:NamedIndividual ,
+                             :Benefit ;
+                    :description "นำไปวัดหรือบูชาพระ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#น้ำเต้า
+:น้ำเต้า rdf:type owl:NamedIndividual ,
+                  :Herb ;
+         :name "น้ำเต้า"^^xsd:string ;
+         :nutrition "พลังงาน 27 แคลอรีคาร์โบไฮเดรต 4.1 กรัมโปรตีน 5.1 กรัมไขมัน 0 กรัมใยอาหาร 1.5 กรัมน้ำ 90.1 %วิตามินเอ 15,400 หน่วยสากลวิตามินบี 1 0.05 มิลลิกรัมวิตามินบี 2 0.06 มิลลิกรัมวิตามินซี 95 มิลลิกรัมธาตุแคลเซียม 56 มิลลิกรัมธาตุเหล็ก 11.5 มิลลิกรัมธาตุฟอสฟอรัส 140 มิลลิกรัมพลังงาน 10 แคลอรีคาร์โบไฮเดรต 2.2 กรัมโปรตีน 0.3 กรัมไขมัน 0 กรัมใยอาหาร 1.7 กรัมน้ำ 96.8 %เถ้า 0.3 กรัมวิตามินเอ 391 หน่วยสากลวิตามินบี 1 0.02 มิลลิกรัมวิตามินบี 2 0.04 มิลลิกรัมวิตามินบี 3 0.1 มิลลิกรัมวิตามินซี 12 มิลลิกรัมธาตุแคลเซียม 14 มิลลิกรัมธาตุเหล็ก 0.1 มิลลิกรัมธาตุฟอสฟอรัส 1 มิลลิกรัม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บวบเหลี่ยม
+:บวบเหลี่ยม rdf:type owl:NamedIndividual ,
+                     :Herb ;
+            :hasComponent :ผลบวบเหลี่ยม ,
+                          :เมล็ดบวบเหลี่ยม ;
+            :name "บวบเหลี่ยม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#บำรุงร่างกาย
+:บำรุงร่างกาย rdf:type owl:NamedIndividual ,
+                       :Benefit ;
+              :description "บำรุงร่างกาย"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ประกอบอาหาร
+:ประกอบอาหาร rdf:type owl:NamedIndividual ,
+                      :Benefit ;
+             :description "ประกอบอาหาร"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ปอกระเจา
+:ปอกระเจา rdf:type owl:NamedIndividual ,
+                   :Herb ;
+          :hasComponent :เมล็ดปอกระเจา ,
+                        :ใบปอกระเจา ;
+          :name "ปอกระเจา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ป้องกันผมร่วง
+:ป้องกันผมร่วง rdf:type owl:NamedIndividual ,
+                        :Benefit ;
+               :description "ป้องกันผมร่วง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลกอมขม
+:ผลกอมขม rdf:type owl:NamedIndividual ,
+                  :Fruit ;
+         :hasBenefit :ทำให้ชุ่มคอ ;
+         :name "ผลกอมขม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลถาวัลย์เปรียง
+:ผลถาวัลย์เปรียง rdf:type owl:NamedIndividual ,
+                          :Fruit ;
+                 :hasBenefit :รับประทานเป็นผักสด ;
+                 :name "ผลถาวัลย์เปรียง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลน้ำเต้า
+:ผลน้ำเต้า rdf:type owl:NamedIndividual ,
+                    :Fruit ;
+           :hasBenefit :ต้านเชื้อจุลินทรีย์ ,
+                       :ประกอบอาหาร ,
+                       :ยับยั้งเบาหวาน ;
+           :name "ผลน้ำเต้า"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลบวบเหลี่ยม
+:ผลบวบเหลี่ยม rdf:type owl:NamedIndividual ,
+                       :Fruit ;
+              :hasBenefit :ขับน้ำนมของสตรี ,
+                          :ขับเสมหะ ,
+                          :บำรุงร่างกาย ,
+                          :ประกอบอาหาร ,
+                          :รักษารังแค ,
+                          :ลดไข้ ,
+                          :แก้ร้อนใน ;
+              :name "ผลบวบเหลี่ยม"^^xsd:string ;
+              :nutrition "พลังงาน 18 กิโลแคลอรีโปรตีน 0.7 กรัมไขมัน 0.2 กรัมคาร์โบไฮเดรต 3.3 กรัมเส้นใยอาหาร 0.3 กรัมเถ้า 0.4 กรัมน้ำ 95.4 กรัมเบตาแคโรทีน 30 ไมโครกรัมวิตามินเอรวม 5 REวิตามินบี 1 0.02 มิลลิกรัมวิตามินบี 2 0.04 มิลลิกรัมวิตามินบี 3 0.4 มิลลิกรัมวิตามินซี 15 มิลลิกรัมธาตุแคลเซียม 5 มิลลิกรัมธาตุฟอสฟอรัส 24 มิลลิกรัมธาตุเหล็ก 0.7 มิลลิกรัม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลพิลังกาสา
+:ผลพิลังกาสา rdf:type owl:NamedIndividual ,
+                      :Fruit ;
+             :hasBenefit :ลดไข้ ,
+                         :แก้ท้องเสีย ;
+             :name "ผลพิลังกาสา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิดน้ำมันหอมระเหย
+:ผลิดน้ำมันหอมระเหย rdf:type owl:NamedIndividual ,
+                             :Benefit ;
+                    :description "ผลิดน้ำมันหอมระเหย"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลิตเป็นน้ำตาล
+:ผลิตเป็นน้ำตาล rdf:type owl:NamedIndividual ,
+                         :Benefit ;
+                :description "ผลิตเป็นน้ำตาล"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ผลเต่าร้างแดง
+:ผลเต่าร้างแดง rdf:type owl:NamedIndividual ,
+                        :Fruit ;
+               :hasSideEffect :มีพิษ ;
+               :name "ผลเต่าร้างแดง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#พิลังกาสา
+:พิลังกาสา rdf:type owl:NamedIndividual ,
+                    :Herb ;
+           :hasComponent :ดอกพิลังกาสา ,
+                         :ผลพิลังกาสา ,
+                         :เมล็ดพิลังกาสา ,
+                         :ใบพิลังกาสา ;
+           :name "พิลังกาสา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีพิษ
+:มีพิษ rdf:type owl:NamedIndividual ,
+                :SideEffect ;
+       :description "มีพิษ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีฤทธิ์ระบาย
+:มีฤทธิ์ระบาย rdf:type owl:NamedIndividual ,
+                       :Benefit ;
+              :description "มีฤทธิ์ระบาย"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มีเลือดออกในลำไส้
+:มีเลือดออกในลำไส้ rdf:type owl:NamedIndividual ,
+                            :SideEffect ;
+                   :description "มีเลือดออกในลำไส้"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#มุงหลังคา
+:มุงหลังคา rdf:type owl:NamedIndividual ,
+                    :Benefit ;
+           :description "มุงหลังคา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยับยั้งเบาหวาน
+:ยับยั้งเบาหวาน rdf:type owl:NamedIndividual ,
+                         :Benefit ;
+                :description "ยับยั้งเบาหวาน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ยางกำยาน
+:ยางกำยาน rdf:type owl:NamedIndividual ,
+                   :Resin ;
+          :hasBenefit :ฆ่าเชื้อโรคในอากาศ ,
+                      :ไล่แมลง ;
+          :name "ยางกำยาน"^^xsd:string ;
+          :use "เผาเอาควัน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาฝี
+:รักษาฝี rdf:type owl:NamedIndividual ,
+                  :Benefit ;
+         :description "รักษาฝี"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษารังแค
+:รักษารังแค rdf:type owl:NamedIndividual ,
+                     :Benefit ;
+            :description "รักษารังแค"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รักษาสิว
+:รักษาสิว rdf:type owl:NamedIndividual ,
+                   :Benefit ;
+          :description "รักษาสิว"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รับประทานเป็นผักสด
+:รับประทานเป็นผักสด rdf:type owl:NamedIndividual ,
+                             :Benefit ;
+                    :description "รับประทานเป็นผักสด"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#รากเถาวัลย์เปรียง
+:รากเถาวัลย์เปรียง rdf:type owl:NamedIndividual ,
+                            :Root ;
+                   :hasBenefit :ฆ่าแมลง ,
+                               :ใช้เป็นยาเบื่อปลา ;
+                   :name "รากเถาวัลย์เปรียง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดการอักเสบ
+:ลดการอักเสบ rdf:type owl:NamedIndividual ,
+                      :Benefit ;
+             :description "ลดการอักเสบ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดความดันโลหิต
+:ลดความดันโลหิต rdf:type owl:NamedIndividual ,
+                         :Benefit ;
+                :description "ลดความดันโลหิต"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ลดไข้
+:ลดไข้ rdf:type owl:NamedIndividual ,
+                :Benefit ;
+       :description "ลดไข้"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#สนหางสิงห์
+:สนหางสิงห์ rdf:type owl:NamedIndividual ,
+                     :Herb ;
+            :hasBenefit :ป้องกันผมร่วง ;
+            :name "สนหางสิงห์"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#สะพ้านก๊น
+:สะพ้านก๊น rdf:type owl:NamedIndividual ,
+                    :Herb ;
+           :hasBenefit :ฆ่าแมลง ,
+                       :ต้านเชื้อจุลินทรีย์ ;
+           :name "สะพ้านก๊น"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ส่วนประกอบหลักของเครื่องหอม
+:ส่วนประกอบหลักของเครื่องหอม rdf:type owl:NamedIndividual ,
+                                      :Benefit ;
+                             :description "ส่วนปรกอบหลักของเครื่องหอม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#หนาดคำ
+:หนาดคำ rdf:type owl:NamedIndividual ,
+                 :Herb ;
+        :hasComponent :ดอกหนาดคำ ,
+                      :เมล็ดหนาดคำ ,
+                      :ใบหนาดคำ ;
+        :name "หนาดคำ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ห้ามเลือด
+:ห้ามเลือด rdf:type owl:NamedIndividual ,
+                    :Benefit ;
+           :description "ห้ามเลือด"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#อาเจียน
+:อาเจียน rdf:type owl:NamedIndividual ,
+                  :SideEffect ;
+         :description "อาเจียน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เครื่องจักสาน
+:เครื่องจักสาน rdf:type owl:NamedIndividual ,
+                        :Benefit ;
+               :description "เครื่องจักสาน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เต่าร้างแดง
+:เต่าร้างแดง rdf:type owl:NamedIndividual ,
+                      :Herb ;
+             :hasComponent :ดอกเต่าร้างแดง ,
+                           :ต้นเต่าร้างแดง ,
+                           :ผลเต่าร้างแดง ,
+                           :ใบเต่าร้างแดง ;
+             :name "เต่าร้างแดง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เถาวัลย์เปรียง
+:เถาวัลย์เปรียง rdf:type owl:NamedIndividual ,
+                         :Herb ;
+                :hasComponent :ดอกถาวัลย์เปรียง ,
+                              :ผลถาวัลย์เปรียง ,
+                              :รากเถาวัลย์เปรียง ,
+                              :ใบเถาวัลย์เปรียง ;
+                :name "เถาวัลย์เปรียง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เทียนบ้าน
+:เทียนบ้าน rdf:type owl:NamedIndividual ,
+                    :Herb ;
+           :hasComponent :ดอกเทียนบ้าน ,
+                         :เมล็ดเทียนบ้าน ,
+                         :ใบเทียนบ้าน ;
+           :name "เทียนบ้าน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เฟิร์นเงิน
+:เฟิร์นเงิน rdf:type owl:NamedIndividual ,
+                     :Herb ;
+            :hasBenefit :ต้านเชื้อจุลินทรีย์ ;
+            :name "เฟิร์นเงิน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดบวบเหลี่ยม
+:เมล็ดบวบเหลี่ยม rdf:type owl:NamedIndividual ,
+                          :Seed ;
+                 :hasBenefit :ฆ่าแมลง ,
+                             :มีฤทธิ์ระบาย ;
+                 :hasSideEffect :ท้องเสีย ,
+                                :มีเลือดออกในลำไส้ ,
+                                :อาเจียน ;
+                 :description "เมล็ดบวบเหลี่ยม"^^xsd:string ;
+                 :nutrition "ไขมันอยู่ประมาณ 37.5% มีโปรตีนประมาณ 33.4% และประกอบไปด้วยกรดอะมิโน และเมล็ดบวบที่มีรสขมจะมีสาร Cucurbitacin B 0.12%, น้ำมันประมาณ 18.4%, กรดไขมันไม่อิ่มตัวประมาณ 80.3%, กรดไขมันอิ่มตัวประมาณ 19.34% unsaponified matters 1.5% กรดไขมันได้แก่ Oleic acid, Palmitic acid, Stearic acid, Linoleic acid และมี Lignoceric acid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดปอกระเจา
+:เมล็ดปอกระเจา rdf:type owl:NamedIndividual ,
+                        :Seed ;
+               :hasSideEffect :มีพิษ ;
+               :name "เมล็ดปอกระเจา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดพิลังกาสา
+:เมล็ดพิลังกาสา rdf:type owl:NamedIndividual ,
+                         :Seed ;
+                :hasBenefit :แก้ลมพิษ ;
+                :name "เมล็ดพิลังกาสา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดหนาดคำ
+:เมล็ดหนาดคำ rdf:type owl:NamedIndividual ,
+                      :Seed ;
+             :hasBenefit :ต้านเชื้อจุลินทรีย์ ,
+                         :ผลิดน้ำมันหอมระเหย ;
+             :name "เมล็ดหนาดคำ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#เมล็ดเทียนบ้าน
+:เมล็ดเทียนบ้าน rdf:type owl:NamedIndividual ,
+                         :Seed ;
+                :hasBenefit :ขับเสมหะ ,
+                            :แก้แผลไฟไหม้น้ำร้อนลวก ;
+                :name "เมล็ดเทียนบ้าน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้คางทูม
+:แก้คางทูม rdf:type owl:NamedIndividual ,
+                    :Benefit ;
+           :description "แก้คางทูม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ท้องเสีย
+:แก้ท้องเสีย rdf:type owl:NamedIndividual ,
+                      :Benefit ;
+             :description "แก้ท้องเสีย"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ร้อนใน
+:แก้ร้อนใน rdf:type owl:NamedIndividual ,
+                    :Benefit ;
+           :description "แก้ร้อนใน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ลมพิษ
+:แก้ลมพิษ rdf:type owl:NamedIndividual ,
+                   :Benefit ;
+          :description "แก้ลมพิษ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้แผลไฟไหม้น้ำร้อนลวก
+:แก้แผลไฟไหม้น้ำร้อนลวก rdf:type owl:NamedIndividual ,
+                                 :Benefit ;
+                        :description "แก้แผลไฟไหม้น้ำร้อนลวก"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แก้ไอ
+:แก้ไอ rdf:type owl:NamedIndividual ,
+                :Benefit .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แพงพวยน้ำ
+:แพงพวยน้ำ rdf:type owl:NamedIndividual ,
+                    :Herb ;
+           :hasComponent :ใบแพงพวยน้ำ ;
+           :name "แพงพวยน้ำ"^^xsd:string ;
+           :nutrition "พลังงาน 38 แคลอรี, น้ำ 87%, โปรตีน 3.3 กรัม, ไขมัน 4.8 กรัม, คาร์โบไฮเดรต 4.8 กรัม, ใยอาหาร 3.3 กรัม, เถ้า 1 กรัม, วิตามินเอ 9,875 หน่วยสากล, วิตามินบี2 0.01 มิลลิกรัม, วิตามินบี3 2.8 มิลลิกรัม, วิตามินซี 3 มิลลิกรัม, แคลเซียม 57 มิลลิกรัม, ฟอสฟอรัส 300 มิลลิกรัม และธาตุเหล็ก 1.3 มิลลิกรัม"^^xsd:string ;
+           :use "วิธีใช้ตาม ถ้าเป็นยาแห้งให้ใช้ครั้งละ 10-35 กรัม นำมาต้มกับน้ำกิน ถ้าเป็นยาสดให้ใช้ครั้งละ 30-70 กรัม นำมาตำคั้นเอาแต่น้ำกินหรือใช้ตำพอกแผลภายนอก การเก็บมาใช้ ให้เก็บในช่วงกำลังออกดอกและลำต้นงอกงามดีแล้ว แล้วนำมาล้างให้สะอาด ตากให้แห้งเก็บเอาไว้ใช้ หรือจะใช้แบบสด ๆ เลยก็ได้ลักษณะของยาแห้งที่ดี ควรมีลักษณะของลำต้นยาวและอวบอ้วน มีความกว้างประมาณ 3-5 มิลลิเมตร สีออกน้ำตาลแดง มีรอยย่นทั้งตามยาวและตามขวาง มีเนื้อนิ่ม ตามใต้ข้อมีรากแห้งเป็นฝอยสีดำคล้ายเส้นผม กลีบมันร่วงง่าย และมักร่วงหายหมดไป"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#แหล่งอาหารสัตว์
+:แหล่งอาหารสัตว์ rdf:type owl:NamedIndividual ,
+                          :Benefit ;
+                 :description "แหล่งอาหารสัตว์"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#โกฐน้ำเต้า
+:โกฐน้ำเต้า rdf:type owl:NamedIndividual ,
+                     :Herb ;
+            :hasComponent :ใบโกฐน้ำเต้า ;
+            :description "พลังงาน 88 กิโลแคลอรีคาร์โบไฮเดรต 4.54 กรัมน้ำตาล 1.1 กรัมเส้นใยอาหาร 1.8 กรัมไขมัน 0.3 กรัมโปรตีน 0.8 กรัมวิตามินบี 1 0.02 มิลลิกรัม 2%วิตามินบี 2 0.03 มิลลิกรัม 3%วิตามินบี 3 0.3 มิลลิกรัม 2%วิตามินบี 5 0.085 มิลลิกรัม 2%วิตามินบี 6 0.024 มิลลิกรัม 2%วิตามินบี 9 7 ไมโครกรัม 2%โคลีน 6.1 มิลลิกรัม 1%วิตามินซี 8 มิลลิกรัม 10%วิตามินอี 0.27 มิลลิกรัม 2%วิตามินเค 29.3 ไมโครกรัม 28%ธาตุแคลเซียม 86 มิลลิกรัม 9%ธาตุเหล็ก 0.22 มิลลิกรัม 2%ธาตุแมกนีเซียม 12 มิลลิกรัม 3%ธาตุแมงกานีส 0.196 มิลลิกรัม 9%ธาตุฟอสฟอรัส 14 มิลลิกรัม 2ธาตุโพแทสเซียม 288 มิลลิกรัม 6%ธาตุโซเดียม 4 มิลลิกรัม 0%ธาตุสังกะสี 0.1 มิลลิกรัม 1%"^^xsd:string ;
+            :name "โกฐน้ำเต้า"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้ย้อมเล็บ
+:ใช้ย้อมเล็บ rdf:type owl:NamedIndividual ,
+                      :Benefit ;
+             :description "ช้ย้อมเล็บทำให้เล็บเป็นสีส้ม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใช้เป็นยาเบื่อปลา
+:ใช้เป็นยาเบื่อปลา rdf:type owl:NamedIndividual ,
+                            :Benefit ;
+                   :description "ใช้เป็นยาเบื่อปลา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกระสัง
+:ใบกระสัง rdf:type owl:NamedIndividual ,
+                   :Leaf ;
+          :hasBenefit :ต้านมะเร็ง ,
+                      :ต้านอนุมูลอิสระ ,
+                      :ป้องกันผมร่วง ,
+                      :รักษาสิว ,
+                      :รับประทานเป็นผักสด ;
+          :hasComponent :ต้านเชื้อจุลินทรีย์ ;
+          :name "ใบกระสัง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบกอมขม
+:ใบกอมขม rdf:type owl:NamedIndividual ,
+                  :Leaf ;
+         :hasBenefit :ลดไข้ ;
+         :name "ใบกอมขม"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบข้าวเย็นเหนือ
+:ใบข้าวเย็นเหนือ rdf:type owl:NamedIndividual ,
+                          :Leaf ;
+                 :hasBenefit :ต้านเชื้อจุลินทรีย์ ,
+                             :รับประทานเป็นผักสด ,
+                             :ห้ามเลือด ;
+                 :name "ใบข้าวเย็นเหนือ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบจักรนารายณ์
+:ใบจักรนารายณ์ rdf:type owl:NamedIndividual ,
+                        :Leaf ;
+               :hasBenefit :ประกอบอาหาร ,
+                           :รับประทานเป็นผักสด ;
+               :name "ใบจักรนารายณ์"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบชิงช้าชาลี
+:ใบชิงช้าชาลี rdf:type owl:NamedIndividual ,
+                       :Leaf ;
+              :hasBenefit :ต้านเชื้อจุลินทรีย์ ,
+                          :ยับยั้งเบาหวาน ,
+                          :ลดการอักเสบ ,
+                          :ลดความดันโลหิต ,
+                          :แหล่งอาหารสัตว์ ;
+              :name "ใบชิงช้าชาลี"^^xsd:string ;
+              :nutrition "โปรตีนสูง มีแคลเซียมและฟอสฟอรัสในปริมาณปานกลาง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบน้ำเต้า
+:ใบน้ำเต้า rdf:type owl:NamedIndividual ,
+                    :Leaf ;
+           :hasBenefit :ประกอบอาหาร ;
+           :name "ใบน้ำเต้า"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบปอกระเจา
+:ใบปอกระเจา rdf:type owl:NamedIndividual ,
+                     :Leaf ;
+            :hasBenefit :ประกอบอาหาร ;
+            :name "ใบปอกระเจา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบพิลังกาสา
+:ใบพิลังกาสา rdf:type owl:NamedIndividual ,
+                      :Leaf ;
+             :hasBenefit :มีฤทธิ์ระบาย ,
+                         :แก้ไอ ;
+             :name "ใบพิลังกาสา"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบหนาดคำ
+:ใบหนาดคำ rdf:type owl:NamedIndividual ,
+                   :Leaf ;
+          :hasBenefit :ประกอบอาหาร ;
+          :name "ใบหนาดคำ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเต่าร้างแดง
+:ใบเต่าร้างแดง rdf:type owl:NamedIndividual ,
+                        :Leaf ;
+               :hasBenefit :ประกอบอาหาร ,
+                           :มุงหลังคา ,
+                           :รับประทานเป็นผักสด ,
+                           :เครื่องจักสาน ;
+               :description "ใบเต่าร้างแดง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเถาวัลย์เปรียง
+:ใบเถาวัลย์เปรียง rdf:type owl:NamedIndividual ,
+                           :Leaf ;
+                  :hasBenefit :รับประทานเป็นผักสด ;
+                  :name "ใบถาวัลย์เปรียง"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบเทียนบ้าน
+:ใบเทียนบ้าน rdf:type owl:NamedIndividual ,
+                      :Leaf ;
+             :hasBenefit :รักษาฝี ,
+                         :แก้แผลไฟไหม้น้ำร้อนลวก ;
+             :name "ใบเทียนบ้าน"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบแพงพวยน้ำ
+:ใบแพงพวยน้ำ rdf:type owl:NamedIndividual ,
+                      :Leaf ;
+             :hasBenefit :ประกอบอาหาร ;
+             :name "ใบแพงพวยน้ำ"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ใบโกฐน้ำเต้า
+:ใบโกฐน้ำเต้า rdf:type owl:NamedIndividual ,
+                       :Leaf ;
+              :hasBenefit :ต้านเชื้อจุลินทรีย์ ,
+                          :มีฤทธิ์ระบาย ,
+                          :รับประทานเป็นผักสด ,
+                          :ห้ามเลือด ;
+              :name "ใบโกฐน้ำเต้า"^^xsd:string .
+
+
+###  http://www.semanticweb.org/thana/ontologies/2567/2/herb5#ไล่แมลง
+:ไล่แมลง rdf:type owl:NamedIndividual ,
+                  :Benefit ;
+         :description "ไล่แมลง"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPARQL Query Template</title>
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+            font-family: monospace; 
+            font-size: 14px; 
+            height: 100px; /* Reduced textarea height */
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block; /* Make it a block element */
+            margin: 20px auto 0 auto; /* Center using auto margins */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #results {
+            margin-top: 40px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>คิวรี่ SPARQL</h1>
+
+    <form id="sparqlForm" action="sparql-endpoint.php" method="post">
+        <label for="query">สืบค้นประโยชน์ของสมุนไพรโดยพิมพ์ keyword </label>
+        <br />
+        <textarea id="query" name="query" rows="3" cols="50" style="text-align: center"-></textarea>
+        <br />
+        <input type="submit" value="ค้นหา" />
+    </form>
+
+    <h2>ผลลัพธ์</h2>
+
+    <div id="results"></div>
+
+    <script>
+
+        const endpoint = "http://localhost:3030/DatabaseSystem_Ont/query";
+        const resultsElement = document.getElementById("results");
+
+        document.getElementById("sparqlForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const queryElement = document.getElementById("query");
+
+            const sparqlQuery = `
+        prefix herb: <http://www.semanticweb.org/thana/ontologies/2567/2/herb5#> 
+        SELECT DISTINCT ?herbName ?description
+        WHERE {
+          ?herb  herb:hasBenefit ?benefit.
+          ?herb  herb:name ?herbName.
+          ?benefit herb:description ?description.
+          filter contains(?description,"${queryElement.value}").
+        }`;
+
+            console.log(sparqlQuery);
+
+            fetch(endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: `query=${encodeURIComponent(sparqlQuery)}`,
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    resultsElement.innerHTML = "";
+
+                    const bindings = data.results.bindings;
+
+                    if (bindings.length === 0) {
+                        resultsElement.innerHTML = "<p>ไม่พบผลลัพธ์</p>";
+                        return;
+                    }
+
+                    const table = document.createElement("table");
+                    table.classList.add("table");
+
+                    const thead = document.createElement("thead");
+                    table.appendChild(thead);
+
+                    const tr = document.createElement("tr");
+                    thead.appendChild(tr);
+
+                    for (const variable of Object.keys(bindings[0])) {
+                        const th = document.createElement("th");
+                        th.textContent = variable;
+                        tr.appendChild(th);
+                    }
+
+                    const tbody = document.createElement("tbody");
+                    table.appendChild(tbody);
+
+                    for (const binding of bindings) {
+                        const tr = document.createElement("tr");
+                        tbody.appendChild(tr);
+
+                        for (const variable of Object.keys(binding)) {
+                            const td = document.createElement("td");
+                            td.textContent = binding[variable].value;
+                            tr.appendChild(td);
+                        }
+                    }
+
+                    resultsElement.appendChild(table);
+                });
+        });
+    </script>
+</body>
+
+</html>

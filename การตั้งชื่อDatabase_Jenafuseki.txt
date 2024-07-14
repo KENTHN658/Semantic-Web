@@ -1,0 +1,1 @@
+หมายเหตุ : ต้องตั้งชื่อ Database ใน jena fuseki เป็น DatabaseSystem_Ont 
